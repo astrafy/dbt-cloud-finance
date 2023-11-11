@@ -1,7 +1,5 @@
 semantic_models:
   - name: order_item
-    access: public
-    group: finance
     defaults:
       agg_time_dimension: ordered_at
     description: |
