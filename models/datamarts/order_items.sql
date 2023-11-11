@@ -2,25 +2,25 @@ with
 
 order_items as (
 
-    select * from {{ ref('jaffle_shop_mesh_platform', 'stg_order_items') }}
+    select * from {{ ref('js_platform_dbt_cl', 'stg_order_items') }}
 
 ),
 
 
 orders as (
     
-    select * from {{ ref('jaffle_shop_mesh_platform', 'stg_orders') }}
+    select * from {{ ref('js_platform_dbt_cl', 'stg_orders') }}
 ),
 
 products as (
 
-    select * from {{ ref('jaffle_shop_mesh_platform', 'stg_products') }}
+    select * from {{ ref('js_platform_dbt_cl', 'stg_products') }}
 
 ),
 
 supplies as (
 
-  select * from {{ ref('jaffle_shop_mesh_platform', 'stg_supplies') }}
+  select * from {{ ref('js_platform_dbt_cl', 'stg_supplies') }}
 
 ),
 
