@@ -3,7 +3,7 @@ version: "2.1.0"
 config-version: 2
 
 profile: "default"
-require-dbt-version: [">=1.6.0", "<2.0.0"]
+require-dbt-version: ">=1.6.0"
 
 model-paths: [ "models" ]
 analysis-paths: [ "analyses" ]
@@ -28,8 +28,4 @@ models:
   js_finance_dbt_cl:
     +tags: js_finance_dbt_cl
     staging:
-      +materialized: table
-    intermediate:
-      +materialized: table
-    datamarts:
-      +materialized: table
+      +materialized: view
