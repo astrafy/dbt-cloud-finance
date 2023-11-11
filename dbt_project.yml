@@ -21,11 +21,6 @@ vars:
   truncate_timespan_to: "{{ current_timestamp() }}"
   "dbt_date:time_zone": "America/Los_Angeles"
 
-
-query-comment:
-  comment: "{{ common.query_comment(node) }}"
-  job-label: True
-
 seeds:
   +tags: js_finance_dbt_cl
 
