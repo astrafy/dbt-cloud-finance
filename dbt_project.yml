@@ -26,7 +26,6 @@ query-comment:
   comment: "{{ common.query_comment(node) }}"
   job-label: True
 
-
 quoting:
   database: true
   schema: true
