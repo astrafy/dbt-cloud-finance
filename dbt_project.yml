@@ -1,4 +1,4 @@
-name: "finance"
+name: "js_finance_dbt_cl"
 version: "2.1.0"
 config-version: 2
 
@@ -33,7 +33,7 @@ quoting:
   identifier: true
 
 models:
-  finance:
+  js_finance_dbt_cl:
     staging:
       +materialized: table
     intermediate:
