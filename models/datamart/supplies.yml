@@ -1,5 +1,7 @@
 models:
   - name: supplies
+    access: protected
+    group: finance
     description: >
       List of our supply expenses data with basic cleaning and transformation applied.
 
