@@ -26,13 +26,12 @@ query-comment:
   comment: "{{ common.query_comment(node) }}"
   job-label: True
 
-quoting:
-  database: true
-  schema: true
-  identifier: true
+seeds:
+  +tags: js_finance_dbt_cl
 
 models:
   js_finance_dbt_cl:
+    +tags: js_finance_dbt_cl
     staging:
       +materialized: table
     intermediate:
