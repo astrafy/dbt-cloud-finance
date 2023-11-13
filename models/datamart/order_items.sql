@@ -2,25 +2,25 @@ with
 
 order_items as (
 
-    select * from {{ ref('js_platform_dbt_cl', 'stg_order_items') }}
+    select * from {{ ref('js_platform_dbt_cl', 'dm_order_items') }}
 
 ),
 
 
 orders as (
     
-    select * from {{ ref('js_platform_dbt_cl', 'stg_orders') }}
+    select * from {{ ref('js_platform_dbt_cl', 'dm_orders') }}
 ),
 
 products as (
 
-    select * from {{ ref('js_platform_dbt_cl', 'stg_products') }}
+    select * from {{ ref('js_platform_dbt_cl', 'dm_products') }}
 
 ),
 
 supplies as (
 
-  select * from {{ ref('js_platform_dbt_cl', 'stg_supplies') }}
+  select * from {{ ref('js_platform_dbt_cl', 'dm_supplies') }}
 
 ),
 
