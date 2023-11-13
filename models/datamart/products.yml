@@ -9,30 +9,16 @@ models:
         enforced: true
     columns:
       - name: product_id
-        meta:
-          dimension:
-            type: string
+        data_type: text
       - name: product_name
-        meta:
-          dimension:
-            type: string
+        data_type: text
       - name: product_type
-        meta:
-          dimension:
-            type: string
+        data_type: text
       - name: product_description
-        meta:
-          dimension:
-            type: string
+        data_type: text
       - name: product_price
-        meta:
-          dimension:
-            type: number
+        data_type: number
       - name: is_food_item
-        meta:
-          dimension:
-            type: boolean
+        data_type: boolean
       - name: is_drink_item
-        meta:
-          dimension:
-            type: boolean
+        data_type: boolean
