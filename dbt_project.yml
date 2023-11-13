@@ -29,3 +29,5 @@ models:
     +tags: js_finance_dbt_cl
     staging:
       +materialized: view
+    datamart:
+      +materialized: table
