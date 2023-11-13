@@ -17,6 +17,6 @@ models:
       - name: supply_name
         data_type: string
       - name: supply_cost
-        data_type: number
+        data_type: FLOAT
       - name: is_perishable_supply
         data_type: boolean
