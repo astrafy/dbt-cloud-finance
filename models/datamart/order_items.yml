@@ -4,36 +4,23 @@ models:
       Items contatined in each order. The grain of the table is one row per order item.
     access: public
     group: finance
+    config:
+      contract:
+        enforced: true
     columns:
       - name: order_item_id
-        meta:
-          dimension:
-            type: string
+        data_type: text
       - name: order_id
-        meta:
-          dimension:
-            type: string
+        data_type: text
       - name: product_id
-        meta:
-          dimension:
-            type: string
+        data_type: text
       - name: product_price
-        meta:
-          dimension:
-            type: number
+        data_type: number
       - name: supply_cost
-        meta:
-          dimension:
-            type: number
+        data_type: number
       - name: is_food_item
-        meta:
-          dimension:
-            type: boolean
+        data_type: boolean
       - name: is_drink_item
-        meta:
-          dimension:
-            type: boolean
+        data_type: boolean
       - name: ordered_at
-        meta:
-          dimension:
-            type: date
+        data_type: timestamp_ntz
