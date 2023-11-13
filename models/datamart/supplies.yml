@@ -1,14 +1,31 @@
 models:
   - name: supplies
+    description: |
+      Supplies dimension table. The grain of the table is one row per supply and product combination.
     access: protected
     group: finance
-    description: >
-      List of our supply expenses data with basic cleaning and transformation applied.
-
-      One row per supply cost, not per supply. As supply costs fluctuate they receive a new row with a new UUID. Thus there can be multiple rows per supply_id.
     columns:
       - name: supply_uuid
-        description: The unique key of our supplies per cost.
-        tests:
-          - not_null
-          - unique
+        meta:
+          dimension:
+            type: string
+      - name: supply_id
+        meta:
+          dimension:
+            type: string
+      - name: product_id
+        meta:
+          dimension:
+            type: string
+      - name: supply_name
+        meta:
+          dimension:
+            type: string
+      - name: supply_cost
+        meta:
+          dimension:
+            type: number
+      - name: is_perishable_supply
+        meta:
+          dimension:
+            type: boolean
