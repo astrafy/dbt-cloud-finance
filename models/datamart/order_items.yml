@@ -9,11 +9,11 @@ models:
         enforced: true
     columns:
       - name: order_item_id
-        data_type: text
+        data_type: string
       - name: order_id
-        data_type: text
+        data_type: string
       - name: product_id
-        data_type: text
+        data_type: string
       - name: product_price
         data_type: number
       - name: supply_cost
@@ -23,4 +23,4 @@ models:
       - name: is_drink_item
         data_type: boolean
       - name: ordered_at
-        data_type: timestamp_ntz
+        data_type: timestamp

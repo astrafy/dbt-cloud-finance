@@ -9,13 +9,13 @@ models:
         enforced: true
     columns:
       - name: product_id
-        data_type: text
+        data_type: string
       - name: product_name
-        data_type: text
+        data_type: string
       - name: product_type
-        data_type: text
+        data_type: string
       - name: product_description
-        data_type: text
+        data_type: string
       - name: product_price
         data_type: number
       - name: is_food_item
