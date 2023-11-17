@@ -2,7 +2,7 @@ name: "js_finance_dbt_cl"
 version: "2.1.0"
 config-version: 2
 dbt-cloud:
-    project-id: 312814
+    project-id: 312815
 profile: "default"
 require-dbt-version: ">=1.6.0"
 
